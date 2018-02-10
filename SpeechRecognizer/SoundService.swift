@@ -100,7 +100,7 @@ class SoundService {
         // 128 bytes - 256 4-bit samples convertable to 16-bit PCM
         if frameBuffer.count >= 131 {
             // Get the frame
-            let currentFrame = frameBuffer
+            let currentFrame = frameBuffer.subdata(in: 0 ..< 131)
             // Clear the buffer
             frameBuffer.removeAll()
             
