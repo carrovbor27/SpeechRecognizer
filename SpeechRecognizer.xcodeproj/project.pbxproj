@@ -12,6 +12,9 @@
 		65E87DC81EB2A1E80095E0E4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65E87DC61EB2A1E80095E0E4 /* Main.storyboard */; };
 		65E87DCA1EB2A1E80095E0E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65E87DC91EB2A1E80095E0E4 /* Assets.xcassets */; };
 		65E87DCD1EB2A1E80095E0E4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65E87DCB1EB2A1E80095E0E4 /* LaunchScreen.storyboard */; };
+		65F1A51F202F9E8B0044005F /* sampl2.hexformat in Resources */ = {isa = PBXBuildFile; fileRef = 65F1A51E202F9E5C0044005F /* sampl2.hexformat */; };
+		65FB72142018F646006307F1 /* SoundService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65FB72132018F646006307F1 /* SoundService.swift */; };
+		65FB721620190A9B006307F1 /* sampl2.binformat in Resources */ = {isa = PBXBuildFile; fileRef = 65FB72152018FF20006307F1 /* sampl2.binformat */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		65E87DC91EB2A1E80095E0E4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		65E87DCC1EB2A1E80095E0E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		65E87DCE1EB2A1E80095E0E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		65F1A51E202F9E5C0044005F /* sampl2.hexformat */ = {isa = PBXFileReference; explicitFileType = compiled; path = sampl2.hexformat; sourceTree = "<group>"; };
+		65FB72132018F646006307F1 /* SoundService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundService.swift; sourceTree = "<group>"; };
+		65FB72152018FF20006307F1 /* sampl2.binformat */ = {isa = PBXFileReference; lastKnownFileType = file; path = sampl2.binformat; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,12 +60,15 @@
 		65E87DC11EB2A1E80095E0E4 /* SpeechRecognizer */ = {
 			isa = PBXGroup;
 			children = (
+				65FB72152018FF20006307F1 /* sampl2.binformat */,
+				65F1A51E202F9E5C0044005F /* sampl2.hexformat */,
 				65E87DC21EB2A1E80095E0E4 /* AppDelegate.swift */,
 				65E87DC41EB2A1E80095E0E4 /* ViewController.swift */,
 				65E87DC61EB2A1E80095E0E4 /* Main.storyboard */,
 				65E87DC91EB2A1E80095E0E4 /* Assets.xcassets */,
 				65E87DCB1EB2A1E80095E0E4 /* LaunchScreen.storyboard */,
 				65E87DCE1EB2A1E80095E0E4 /* Info.plist */,
+				65FB72132018F646006307F1 /* SoundService.swift */,
 			);
 			path = SpeechRecognizer;
 			sourceTree = "<group>";
@@ -125,8 +134,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				65E87DCD1EB2A1E80095E0E4 /* LaunchScreen.storyboard in Resources */,
+				65F1A51F202F9E8B0044005F /* sampl2.hexformat in Resources */,
 				65E87DCA1EB2A1E80095E0E4 /* Assets.xcassets in Resources */,
 				65E87DC81EB2A1E80095E0E4 /* Main.storyboard in Resources */,
+				65FB721620190A9B006307F1 /* sampl2.binformat in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,6 +149,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				65E87DC51EB2A1E80095E0E4 /* ViewController.swift in Sources */,
+				65FB72142018F646006307F1 /* SoundService.swift in Sources */,
 				65E87DC31EB2A1E80095E0E4 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -267,6 +279,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = DT.SpeechRecognizer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -280,6 +293,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = DT.SpeechRecognizer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -302,6 +316,7 @@
 				65E87DD31EB2A1E80095E0E4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
